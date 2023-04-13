@@ -2,9 +2,9 @@ import { Reset } from 'styled-reset';
 import { Link } from "react-scroll"
 import './App.css';
 import React, { Component } from 'react'
-
-
-const section = { marginBottom:135};
+import 'bootstrap/dist/css/bootstrap.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub,faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 
 function App() {
@@ -12,12 +12,12 @@ function App() {
     <div>
       <Reset />
       <main className="main_contents">
-        <div className="container">
+        <div className="cont">
           <Nav></Nav>
           <About></About>
-          <Skills style={section}></Skills>
-          <Works style={section}></Works>
-          <Contact style={section}></Contact>
+          <Skills></Skills>
+          <Works></Works>
+          <Contact></Contact>
         </div>
       </main>
     </div>
@@ -43,14 +43,14 @@ class Nav extends Component {
 }
 class About extends Component {
   render() {
-    const profileUrl = "/images/profile-m.jpg";
+    const profileUrl = "/images/profile.jpg";
     return (
-      <div className='section' id='about'>
+      <section className='section' id='about'>
         <h2 className='title'>About me<span role="img" aria-label="Smiling Face">😊</span></h2>
         <div>
           <img src={profileUrl} alt='profile'/>
         </div>
-      </div>
+      </section>
     )
   }
 }
@@ -59,7 +59,14 @@ class Skills extends Component {
     return (
       <section className='section' id='skills'>
         <h2 className='title'>Improving skills<span role="img" aria-label="Pencil">✏️</span></h2>
-        <p>Skills</p>
+        <ul className='d-flex justify-content-center flex-wrap'>
+          <li><img src='/images/sk-html.png' alt='html'/></li>
+          <li><img src='/images/sk-css.png' alt='css'/></li>
+          <li><img src='/images/sk-javascript.png' alt='javascript'/></li>
+          <li><img src='/images/sk-bootstrap.png' alt='bootstrap'/></li>
+          <li><img src='/images/sk-jquery.png' alt='jquery'/></li>
+          <li><img src='/images/sk-react.png' alt='react'/></li>
+        </ul>
       </section>
     )
   }
@@ -67,9 +74,16 @@ class Skills extends Component {
 class Works extends Component {
   render() {
     return (
-      <section id='works'>
+      <section className='section' id='works'>
         <h2 className='title'>It’s my works<span role="img" aria-label="Flexed Biceps">💪</span></h2>
-        <p>Works</p>
+        <div className='d-flex flex-wrap'>
+          <div>
+            <img src='/images/folder.svg' alt='circle' className='project1'/>
+            </div>
+          <img src='/images/folder.svg' alt='circle' className='project2'/>
+          <img src='/images/folder.svg' alt='circle' className='project3'/>
+          <img src='/images/folder.svg' alt='circle' className='project4'/>
+        </div>
       </section>
     )
   }
@@ -77,9 +91,13 @@ class Works extends Component {
 class Contact extends Component {
   render() {
     return (
-      <section style={section} id='contact'>
+      <section className='section' id='contact'>
         <h2 className='title'>Contact me here!<span role="img" aria-label="Backhand Index Pointing Down">👇</span></h2>
-        <p>Contact</p>
+        <div className='d-flex justify-content-center'>
+          <a href='https://github.com/mi222ng'><FontAwesomeIcon icon={faGithub} beatFade className='contacticon mygit'/></a>
+          <a href='https://www.instagram.com/mi222ng'><FontAwesomeIcon icon={faInstagram} beatFade className='contacticon myinsta'/></a>
+          {/* <p>hello</p> */}
+        </div>
       </section>
     )
   }
