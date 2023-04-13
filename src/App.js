@@ -1,11 +1,14 @@
 import { Reset } from 'styled-reset';
-import { Link } from "react-scroll"
+import { Link, animateScroll as scroll } from 'react-scroll'
 import './App.css';
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub,faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faCircleChevronUp } from '@fortawesome/free-solid-svg-icons';
 
+
+// scroll.scrollToTop();
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
           <Skills></Skills>
           <Works></Works>
           <Contact></Contact>
+          <Topbtn></Topbtn>
         </div>
       </main>
     </div>
@@ -31,10 +35,10 @@ class Nav extends Component {
       <div className='menu'>
         <nav>
           <ul>
-              <li><Link to="about" spy={true} smooth={true}>About</Link></li>
-              <li><Link to="skills" spy={true} smooth={true}>Skills</Link></li>
-              <li><Link to="works" spy={true} smooth={true}>Works</Link></li>
-              <li><Link to="contact" spy={true} smooth={true}>Contact</Link></li>
+              <li><Link to="about" spy={true}>About</Link></li>
+              <li><Link to="skills" spy={true}>Skills</Link></li>
+              <li><Link to="works" spy={true}>Works</Link></li>
+              <li><Link to="contact" spy={true}>Contact</Link></li>
           </ul>
         </nav>
       </div>
@@ -79,10 +83,16 @@ class Works extends Component {
         <div className='d-flex flex-wrap'>
           <div>
             <img src='/images/folder.svg' alt='circle' className='project1'/>
-            </div>
-          <img src='/images/folder.svg' alt='circle' className='project2'/>
-          <img src='/images/folder.svg' alt='circle' className='project3'/>
-          <img src='/images/folder.svg' alt='circle' className='project4'/>
+          </div>
+          <div>
+            <img src='/images/folder.svg' alt='circle' className='project2'/>
+          </div>
+          <div>
+            <img src='/images/folder.svg' alt='circle' className='project3'/>
+          </div>
+          <div>
+            <img src='/images/folder.svg' alt='circle' className='project4'/>
+          </div>
         </div>
       </section>
     )
@@ -98,6 +108,27 @@ class Contact extends Component {
           <a href='https://www.instagram.com/mi222ng'><FontAwesomeIcon icon={faInstagram} beatFade className='contacticon myinsta'/></a>
           {/* <p>hello</p> */}
         </div>
+      </section>
+    )
+  }
+}
+class Topbtn extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+  scrollToTop() {
+    scroll.scrollToTop({
+      duration: 0,
+      delay:100
+      }
+    );
+  }
+  render() {
+    return (
+      <section className='d-flex justify-content-center'>
+        <a href={this.scrollToTop} onClick={this.scrollToTop} ><FontAwesomeIcon icon={faCircleChevronUp} className='topbtn'/></a>
       </section>
     )
   }

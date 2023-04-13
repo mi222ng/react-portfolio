@@ -26,6 +26,7 @@ body {
 .cont {
   width: 70%;
   margin: auto;
+  /* position: relative; */
 }
 .cont .menu {
   display: flex;
@@ -89,9 +90,10 @@ span[role="img"] {
 #works div img {
   width: 196px;
 }
+
 /* contact */
 #contact > div {
-  gap: 116px;
+  gap: 15%;
 }
 #contact .contacticon {
   font-size: 100px;
@@ -111,4 +113,9 @@ span[role="img"] {
     #dbff00 100.01%
   );
   color: #efefef;
+}
+/* top button */
+
+.topbtn {
+  font-size: 50px;
 }
