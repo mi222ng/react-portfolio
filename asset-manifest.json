@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.98e470a7.css",
-    "main.js": "/react-portfolio/static/js/main.a413dbe0.js",
+    "main.js": "/react-portfolio/static/js/main.ffeb2fae.js",
     "static/js/787.28cb0dcd.chunk.js": "/react-portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/Pretendard-Medium.ttf": "/react-portfolio/static/media/Pretendard-Medium.a55315616a247a625bea.ttf",
     "static/media/Pretendard-SemiBold.ttf": "/react-portfolio/static/media/Pretendard-SemiBold.224f934d4160c1ea26e2.ttf",
     "static/media/Pretendard-Black.ttf": "/react-portfolio/static/media/Pretendard-Black.75e134da01d227c7a3a8.ttf",
     "index.html": "/react-portfolio/index.html",
     "main.98e470a7.css.map": "/react-portfolio/static/css/main.98e470a7.css.map",
-    "main.a413dbe0.js.map": "/react-portfolio/static/js/main.a413dbe0.js.map",
+    "main.ffeb2fae.js.map": "/react-portfolio/static/js/main.ffeb2fae.js.map",
     "787.28cb0dcd.chunk.js.map": "/react-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98e470a7.css",
-    "static/js/main.a413dbe0.js"
+    "static/js/main.ffeb2fae.js"
   ]
 }
