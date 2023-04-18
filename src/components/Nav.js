@@ -10,6 +10,7 @@ const HeaderArea = styled.div`
 `;
 
 const HeaderWrap = styled.div`
+    display: flex;
     position: fixed;
     top: 0;
     z-index: 1;
