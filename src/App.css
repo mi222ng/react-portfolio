@@ -84,11 +84,28 @@ span[role="img"] {
 }
 /* works */
 
-#works div {
+/* #works div {
   gap: 300px;
+} */
+#works .workslist {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#works .worksbg {
+  position: relative;
 }
 #works div img {
-  width: 196px;
+  width: 100%;
+}
+#works .workstt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 /* contact */
