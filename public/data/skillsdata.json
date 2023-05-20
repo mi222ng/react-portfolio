@@ -4,61 +4,71 @@
       "id": 1,
       "sort": "lang",
       "skill": "HTML",
-      "color": "#f46d0b"
+      "color": "#f46d0b",
+      "level": "Intermediate"
     },
     {
       "id": 2,
       "sort": "lang",
       "skill": "CSS",
-      "color": "#4b93d6"
+      "color": "#4b93d6",
+      "level": "Intermediate"
     },
     {
       "id": 3,
       "sort": "lang",
       "skill": "JavaScript",
-      "color": "#eebd0f"
+      "color": "#eebd0f",
+      "level": "Intermediate"
     },
     {
       "id": 4,
       "sort": "lang",
       "skill": "jQuery",
-      "color": "#5B4386"
+      "color": "#5B4386",
+      "level": "Intermediate"
     },
     {
       "id": 5,
       "sort": "lang",
       "skill": "ReactJS",
-      "color": "#4BCCEF"
+      "color": "#4BCCEF",
+      "level": "Beginner"
     },
     {
       "id": 6,
       "sort": "lang",
       "skill": "TypeScript",
-      "color": "#1073BB"
+      "color": "#1073BB",
+      "level": "Beginner"
     },
     {
       "id": 7,
       "sort": "lang",
       "skill": "PHP",
-      "color": "#3558A8"
+      "color": "#3558A8",
+      "level": "Beginner"
     },
     {
       "id": 8,
       "sort": "tool",
       "skill": "Figma",
-      "color": "#000"
+      "color": "#000",
+      "level": "Intermediate"
     },
     {
       "id": 9,
       "sort": "tool",
       "skill": "Illustrator",
-      "color": "#E44E25"
+      "color": "#E44E25",
+      "level": "Intermediate"
     },
     {
       "id": 10,
       "sort": "tool",
       "skill": "Photoshop",
-      "color": "#67A969"
+      "color": "#67A969",
+      "level": "Beginner"
     }
   ]
 }

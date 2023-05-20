@@ -7,7 +7,8 @@ class Skills extends Component {
     super(props);
     this.state = {
       skillsList: [],
-      idx: "1",
+      id: "1",
+      sort: "lang",
     };
   }
   componentDidMount() {
@@ -39,16 +40,33 @@ class Skills extends Component {
             ✏️
           </span>
         </h2>
-        <div>
-          {this.state.skillsList.length > 0 ? (
-            <SkillsList
-              list={this.state.skillsList.filter(
-                (skill) => skill.idx === this.state.id
-              )}
-            />
-          ) : (
-            <span>NONE..</span>
-          )}
+        <div className="skillpart">
+          <div className="skill-list">
+            <h3>🚩</h3>
+            {this.state.skillsList.length > 0 ? (
+              <SkillsList
+                list={this.state.skillsList.filter(
+                  //sort 값 lang 을 출력
+                  (skill) => skill.sort === this.state.sort
+                )}
+              />
+            ) : (
+              <span>NONE..</span>
+            )}
+          </div>
+          <div className="skill-list">
+            <h3>🎨</h3>
+            {this.state.skillsList.length > 0 ? (
+              <SkillsList
+                list={this.state.skillsList.filter(
+                  //sort 값이 lang이 아닌 것을 출력
+                  (skill) => skill.sort !== this.state.sort
+                )}
+              />
+            ) : (
+              <span>NONE..</span>
+            )}
+          </div>
         </div>
 
         {/*

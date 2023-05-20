@@ -79,15 +79,32 @@ span[role="img"] {
   clip-path: circle(50% at 50% 50%);
 }
 /* skills */
-#skills ul {
-  gap: 15px 44px;
+#skills .skillpart {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
-#skills li {
+#skills .skillpart .skill-list {
+  display: flex;
+  gap: 20px;
+}
+#skills .skillpart h3 {
+  font-size: 55px;
+}
+#skills .skillpart ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+#skills .skillpart ul li {
   display: inline-block;
   color: #fff;
-  font-size: 36px;
+  font-size: 35px;
   padding: 10px 20px;
   border-radius: 25px;
+}
+.skill-hover {
+  font-size: 15px;
 }
 
 /* works */

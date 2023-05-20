@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SkillsList = (props) => {
+  //상태를 사용하여 마우스 호버시 해당 스킬 객체를 저장
+  const [isHover, setHover] = useState(null);
+  const handleMouseEnter = (skill) => {
+    setHover(skill);
+  };
+  const handleMouseLeave = () => {
+    setHover(null);
+  };
   return (
     <ul>
       {props.list &&
-        props.list.map((skill, id) => (
+        props.list.map((skill) => (
           <li
-            className="skill-lang"
-            key={id}
-            id={skill.skill.toLowerCase()}
+            key={skill.id}
+            //data json 있는 각 컬러값을 배경색으로 지정
             style={{ backgroundColor: skill.color }}
+            //마우스 이벤트
+            onMouseEnter={() => handleMouseEnter(skill)}
+            onMouseLeave={() => handleMouseLeave(null)}
           >
-            {skill.skill}
+            {isHover === skill ? (
+              <span className="skill-hover">{skill.level}</span>
+            ) : (
+              <span>{skill.skill}</span>
+            )}
           </li>
         ))}
     </ul>
