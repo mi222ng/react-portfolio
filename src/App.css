@@ -82,6 +82,14 @@ span[role="img"] {
 #skills ul {
   gap: 15px 44px;
 }
+#skills li {
+  display: inline-block;
+  color: #fff;
+  font-size: 36px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
 /* works */
 
 /* #works div {

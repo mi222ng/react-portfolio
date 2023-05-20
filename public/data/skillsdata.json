@@ -1,0 +1,64 @@
+{
+  "skillsList": [
+    {
+      "id": 1,
+      "sort": "lang",
+      "skill": "HTML",
+      "color": "#f46d0b"
+    },
+    {
+      "id": 2,
+      "sort": "lang",
+      "skill": "CSS",
+      "color": "#4b93d6"
+    },
+    {
+      "id": 3,
+      "sort": "lang",
+      "skill": "JavaScript",
+      "color": "#eebd0f"
+    },
+    {
+      "id": 4,
+      "sort": "lang",
+      "skill": "jQuery",
+      "color": "#5B4386"
+    },
+    {
+      "id": 5,
+      "sort": "lang",
+      "skill": "ReactJS",
+      "color": "#4BCCEF"
+    },
+    {
+      "id": 6,
+      "sort": "lang",
+      "skill": "TypeScript",
+      "color": "#1073BB"
+    },
+    {
+      "id": 7,
+      "sort": "lang",
+      "skill": "PHP",
+      "color": "#3558A8"
+    },
+    {
+      "id": 8,
+      "sort": "tool",
+      "skill": "Figma",
+      "color": "#000"
+    },
+    {
+      "id": 9,
+      "sort": "tool",
+      "skill": "Illustrator",
+      "color": "#E44E25"
+    },
+    {
+      "id": 10,
+      "sort": "tool",
+      "skill": "Photoshop",
+      "color": "#67A969"
+    }
+  ]
+}
