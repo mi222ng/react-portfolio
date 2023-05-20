@@ -1,0 +1,36 @@
+{
+  "worksList" : [
+    {
+      "id" : 1,
+      "title" : "CGV Project",
+      "theme" : "리뉴얼",
+      "sort" : "협업 프로젝트(4인)",
+      "lang" : "HTML, CSS, VanilaJS",
+      "url" : "https://mi222ng.github.io/cgv_project"
+    },
+    {
+      "id" : 2,
+      "title" : "SAMSUNG DISPLAY Project",
+      "theme": "리뉴얼",
+      "sort": "협업 프로젝트(4인)",
+      "lang": "HTML, CSS, Jquery",
+      "url" : "https://mi222ng.github.io/samsung_display"
+    },
+    {
+      "id" : 3,
+      "title" : "LMS ADMIN Project",
+      "theme" : "창작",
+      "sort" : "협업 프로젝트(6인)",
+      "lang" : "HTML, CSS, Jquery, PHP",
+      "url" : "http://mzeeyy.dothome.co.kr/fastcode/admin/login.php"
+    },
+    {
+      "id" : 4,
+      "title" : "LMS USER Project",
+      "theme" : "창작",
+      "sort" : "협업 프로젝트(4인)",
+      "lang" : "HTML, CSS, Jquery, PHP",
+      "url" : "http://mzeeyy.dothome.co.kr/fastcode/user/index.php"
+    }
+  ]
+}
