@@ -124,20 +124,32 @@ span[role="img"] {
 #skills .skillpart h3 {
   font-size: 55px;
 }
-#skills .skillpart ul {
-  display: inline-flex;
+#skills .skillpart .skill-con {
+  display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
 }
-#skills .skillpart ul li {
-  display: inline-block;
+#skills .skillpart .skill-con .skill-parent {
+  position: relative;
+}
+#skills .skillpart .skill-item {
   color: #fff;
   font-size: 35px;
   padding: 10px 20px;
   border-radius: 25px;
 }
 .skill-hover {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 25px;
+  background: #888888;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
   font-size: 15px;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 /* works */

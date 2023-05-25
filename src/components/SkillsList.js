@@ -10,25 +10,31 @@ const SkillsList = (props) => {
     setHover(null);
   };
   return (
-    <ul>
+    <div className="d-flex skill-con">
       {props.list &&
         props.list.map((skill) => (
-          <li
+          <div
             key={skill.id}
-            //data json 있는 각 컬러값을 배경색으로 지정
-            style={{ backgroundColor: skill.color }}
             //마우스 이벤트
             onMouseEnter={() => handleMouseEnter(skill)}
             onMouseLeave={() => handleMouseLeave(null)}
+            className="skill-parent"
           >
+            <div
+              className="skill-item"
+              //data json 있는 각 컬러값을 배경색으로 지정
+              style={{ backgroundColor: skill.color }}
+            >
+              <span>{skill.skill}</span>
+            </div>
             {isHover === skill ? (
               <span className="skill-hover">{skill.level}</span>
             ) : (
-              <span>{skill.skill}</span>
+              ""
             )}
-          </li>
+          </div>
         ))}
-    </ul>
+    </div>
   );
 };
 

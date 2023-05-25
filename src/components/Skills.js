@@ -41,6 +41,7 @@ class Skills extends Component {
           </span>
         </h2>
         <div className="skillpart">
+          <p>Put your mouse on the skill!</p>
           <div className="skill-list">
             <h3>🚩</h3>
             {this.state.skillsList.length > 0 ? (
