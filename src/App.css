@@ -142,7 +142,7 @@ span[role="img"] {
   display: block;
   padding: 5px 10px;
   border-radius: 25px;
-  background: #888888;
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   position: absolute;
   top: 100%;
